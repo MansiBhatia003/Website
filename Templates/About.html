@@ -1,0 +1,376 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content%}
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+   <style type="text/css">
+        .center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+         .c1{
+        margin-top: 5%;
+        margin-right: 5%;
+      }
+      .c2{
+
+        margin-top: 5%;
+        margin-right: 5%; 
+      }
+    h4{
+      color:#f1c40f ;
+      font-size: 20px;
+    }
+     h6{
+    color:#273c75;
+          font-size : 50px; 
+    }
+    .i1  i{
+        color:#e1b12c  ;
+      }
+      .img2{
+        margin-top: 10%;
+         width: 600px;
+         height:550px;
+         border-radius: 20px;
+           } 
+    
+      .counter-box {
+  display: block;
+  background: ;
+  padding: 40px 20px 37px;
+  text-align: center
+}
+
+.counter-box p {
+  margin: 5px 0 0;
+  padding: 0;
+  color: #e8b910;
+  font-size: 22px;
+  font-weight: 500
+}
+
+.counter-box i {
+  font-size: 60px;
+  margin: 0 0 15px;
+  margin-top: 50%;
+  color: #d2d2d2
+}
+
+.counter { 
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 28px
+}
+
+.counter-box {
+      background:transparent;
+}
+
+
+.counter-box. p{
+  color: yellow;
+}
+.four{
+  margin-top:10%;
+}
+
+ .bg{
+    width:100vw;
+    height:100%;
+    background: url('{%static 'images/cimg1.jpg' %}')  no-repeat fixed 0 0; 
+    overflow:auto;
+    background-size: cover;
+    }
+
+    .x1{
+      width: 420px;
+      height: 500px;
+      position: relative;
+    }   
+      .imgcard{
+        width: 420px;
+    height: 500px;
+    display: block;
+    border-radius: 20px;
+      }
+   
+    .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 420px;
+  height: 0;
+  transition: .8s ease;
+  border-radius: 20px;
+}
+   .x1:hover .overlay{
+     height: 510px;
+     background-image: linear-gradient(transparent,#273c75 );
+ }
+   .bt {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+   .bt1 {
+  color: #e1b12c;
+  font-size: 20px;
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  .bt2 {
+  color: #e1b12c;
+  font-size: 20px;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}  .bt3 {
+  color: #e1b12c;
+  font-size: 20px;
+  position: absolute;
+  top: 80%;
+  left: 55%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}  .bt4 {
+  color: #e1b12c;
+  font-size: 20px;
+  position: absolute;
+  top: 80%;
+  left: 65%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.bg{
+    
+    height:100%;
+    }
+  
+</style>
+   <div class="container-fluid" style=" background:url({%static 'images/i3.jpg'%});background-size: cover; height: 500px">
+    <div class="row" style="background:rgba( 38,49,115,0.60);height: 500px;background-size: cover;">
+     <div class="center"><h1 style="font-size: 90px;color: white; margin-bottom: 150px"><center>About Us</center></h1>
+      <p class="center text-white">Home / About Us</p></div>	
+     </div></div>
+  <div class="row">
+    <div class="c1 m-5 col">
+      <h4>About Gateway</h4>
+      <h6>We Are a Trusted Visa and Immigration Agent</h6>
+      <p class="p-3 m-3" style=" text-align: justify; border-left: 3px groove yellow;">Welcome to our immigration website! We are a team of professional agents dedicated to providing reliable and efficient immigration services to our clients. With years of experience in the industry, we understand the complexities and challenges involved in the immigration process. Therefore, we offer personalized services tailored to meet the unique needs of each client.</p>
+    <p>  Our team of agents is highly trained and knowledgeable in the latest immigration regulations and requirements. </p>
+    <div class="row">
+     <div class="col-sm-1 i1">
+       <i class="icofont-4x icofont-clock-time "></i>
+     </div>
+     <div class="col-sm-4 ms-auto me-auto">
+       <h6 class="fs-5"><b>Real Time Status</b> </h6>
+       <p> providing our users with timely and accurate information about the status of their application. </p>
+     </div>
+     <div class="col-sm-1 ms-auto me-auto i1">
+       <i class="icofont-4x icofont-people"></i>
+     </div>
+     <div class="col-sm-4  ">
+       <h6 class="fs-5"><b>Experienced Team</b></h6>
+       <p> Our team of agents is highly trained and knowledgeable in the latest immigration regulations and requirements. </p>
+     </div>
+</div>
+   <a class=" btn btn-warning text-white mt-5 pt-2 pb-2" href="{% url 'contact' %}">Follow Us</a>
+    </div>
+
+    <div class=" c2 col m-5"data-aos="fade-left"data-aos-duration="3000">
+      <img src={%static "images/girl1.jpg" %} class="img2 ">    
+    </div>
+</div>
+
+
+<div class="bg" 
+ style="   background: url('{%static 'images/cimg1.jpg' %}')  no-repeat fixed 0 0; background-size: cover;height: 500px;overflow:hidden;"  >
+
+  
+  
+      <div class="row" style="background:rgba(38,49,115,0.50);height: 500px;">
+<div class="row " style="margin-top:8%">
+<div class="col-md-3">
+    <div class="counter-box">
+      <i class="icofont-like"></i>
+     <p style="font-size:70px"><span class="counter1">2147</span></p>
+      <p>Satisfied Client</p>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="counter-box">
+      <i class="icofont-globe-alt"></i>
+     <p style="font-size:70px"><span class="counter1">70</span></p>
+      <p>Countries</p>
+    </div>
+  </div>
+  <div class=" col-md-3">
+    <div class="counter-box">
+      <i class="icofont-university"></i>
+     <p style="font-size:70px"><span class="counter1" >140</span></p>
+      <p>Universities</p>
+    </div>
+  </div>
+  <div class=" col-md-3">
+    <div class="counter-box">
+      <i class="icofont-graduate"></i>
+    <p style="font-size:70px"><span class="counter1">750</span></p>
+      <p>Happy Students</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+<div class="container text-center mt-5 mb-5 pt-5 pb-5" style="margin-top:20%;">
+    <h4>Professional Team</h4>
+    <h1 style="color:#273c75;font-size: 400%;">Meet our Experienced Team</h1>
+    <p>Our team of agents is highly trained and knowledgeable in the latest immigration regulations and requirements.  Our goal is to make the immigration process as smooth and stress-free as possible for our clients.</p>
+     <div class="row">
+
+       <div class="col-md-4">
+<div class="card x1 " style="border-radius: 20px;">
+    
+
+    <img src={%static "images/business.jpg" %} class="imgcard">
+    <div class="overlay">
+        <p class="bt">Chris Hammer</p>
+     <a href="https://www.facebook.com/">   <i class="bt1  icofont-facebook"></i>  </a>
+     <a href="https://in.linkedin.com/"><i class="bt2  icofont-linkedin"></i> </a>
+     <a href="https://twitter.com/"><i class="bt3  icofont-twitter"></i> </a>
+     <a href="https://www.instagram.com/"><i class="bt4  icofont-instagram"></i></a>
+      
+    </div>
+  </div>  
+</div>
+    <div class="col-md-4 ">
+    <div class="card x1 " style="border-radius:20px">
+    <img src={%static "images/i1.jpg" %} class="imgcard">
+    <div class="overlay" ><a href="https://www.facebook.com/">   <i class="bt1  icofont-facebook"></i>  </a>
+     <a href="https://in.linkedin.com/"><i class="bt2  icofont-linkedin"></i> </a>
+     <a href="https://twitter.com/"><i class="bt3  icofont-twitter"></i> </a>
+     <a href="https://www.instagram.com/"><i class="bt4  icofont-instagram"></i> </a>
+    <p class="bt">Peter Flair</p> 
+    
+    </div>
+    </div>
+  </div>
+    <div class="col-md-4 ">
+    <div class="card x1 " style="border-radius:20px">
+    <img src={%static "images/lady.jpg" %} class="imgcard">
+    <div class="overlay">
+        <p class="bt">Emily Spector</p>
+        <a href="https://www.facebook.com/"><i class="bt1  icofont-facebook"></i>  </a>
+     <a href="https://in.linkedin.com/"><i class="bt2  icofont-linkedin"></i> </a>
+     <a href="https://twitter.com/"><i class="bt3  icofont-twitter"></i> </a>
+     <a href="https://www.instagram.com/"><i class="bt4  icofont-instagram"></i> </a>
+    </div>
+    </div>     
+</div>
+</div>
+</div>
+</div>
+
+ <div class="bg" style="background: url('{%static 'images/contact1.jpg' %}')  no-repeat fixed 0 0; background-size: cover;height: 300px;overflow:hidden;" >
+   <div class="row" style="background:rgba(38,49,115,0.50);height: 300px;">
+ <div class="col-md-8 ps-3 pe-3 " style="text-align:left;">
+ <p class='' style="color:#e1b12c; margin-top: 110px;">VISA APPLICATION</p>
+<h1 class="text-light" style="">Contact Us if You Are Looking for a Visa Application</h1>
+
+<h4 class="text-light " style="margin-bottom:100px">Need a consultation? Call us today +123-234-1234 or email us:gatewaytosuccesshub@gmail.com</h4>
+
+
+</div>
+
+<div class="col-md-1"></div>
+
+<div class="col-md-3 " style="margin:auto;">
+<a class="btn btn-warning text-light ps-5 pe-5 pt-3 pb-3 fs-5" href="{% url 'contact' %}">CONTACT US</a>
+</div>
+
+
+  
+  </div>
+ </div>
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+
+        $('.counter').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+ 
+
+ $('.counter1').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now)+"+");
+        }
+    });
+});
+});
+$('.bg').scroll(function(){
+  var x = $(this).scrollTop();
+  console.log(parseInt(-x/10));
+  $(this).css('background-position','0% '+parseInt(-x/10)+'px');
+});
+</script>
+{% endblock%}

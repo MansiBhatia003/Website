@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static%}
+<style type="text/css">
+	h1{
+		color: #273c75;
+	}
+	p{
+		text-align: justify;
+		padding-top: 2px;
+		padding-bottom: 10px;
+	}
+	hr{
+		border-width: 5px;
+		color: yellow;
+	}
+	.a2{
+		text-decoration: none;
+	}table, th, td {
+		padding: 5px;
+  border: 1px solid #b2bec3;
+  border-collapse: collapse;
+  color: #353b48}
+	 th{
+      background-color: #b2bec3;
+	    }
+	.a2:hover{color:#e1b12c !important}
+	
+	
+</style>
+
+	 <div class="row text-center" style=" background: url({%static 'images/i3.jpg'%}); background-size: cover; height: 500px">
+    <div class="" style="background:rgba( 38,49,115,0.50);">
+     <div class=""><h1 style="font-size: 90px;font-weight: bold; color: white;margin-top: 90px; margin-bottom: 30px"><center>SAT</center></h1>
+     <center> <h4 class="text-white">Home / SAT</h4></center></div>	
+     </div></div>  
+    
+ <div class="container">
+ 	<div class="row border-start ">
+ 		<div class="col-md-7">
+ 			
+        <img src="{%static 'images/s5.jpg' %}"class="border mt-5" height="500px" style="width:800px; border-radius:20px; box-shadow:5px 5px 5px 5px dimgrey ;">
+
+
+  
+<h1 class="m-3">  SAT(Scholastic Assessment Test)</h1>
+<p>SAT (Scholastic Assessment Test) evaluates the Mathematics, Reading, and Writing skills of students aspiring to pursue undergraduate studies abroad.  This test is widely used as a parameter in the universities of the United States of America. SAT is a paper-based test which takes 3 hours to complete with an additional 50 more minutes for the essay.</p>
+<p>
+The SAT score alone cannot guarantee student’s admission into a school – the test is only one of the important factors taken into consideration in the long process of an applicant getting admitted into the desired graduate school.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Section</th>
+    <th>Format</th> 
+    <th>Duration</th>
+  </tr>
+  <tr>
+    <td>EVIDENCE-BASED READING & WRITING</td>
+    <td>Reading – 52 standard multiple-choice<br>
+    Writing – 44 standard multiple-choice</td>
+    <td>100 minutes Reading<br>
+– 65-minute section Writing<br>
+– 35-minute section</td>
+  </tr>
+  <tr>
+    <td>MATHEMATICS	</td>
+    <td>45 standard multiple-choice<br>
+    13 student-produced response</td>
+    <td>80 minutes<br>
+– 25-minute section (no calculator)<br>
+– 55-minute section (calculator allowed)</td>
+  </tr>
+  <tr>
+    <td>ESSAY (OPTIONAL)</td>
+    <td>1 evidence-based essay</td>
+    <td>50 minutes<br>
+– 50-minute essay</td>
+  </tr>
+</table>
+
+
+<h2 style="color: #273c75;font-weight: bold;font-size: 20px;margin-top: 10px;">Remember:</h2>
+
+
+<ul style="list-style-type:number">
+<li>The SAT is a 3 hour 50- minute exam (including an optional essay which takes 50 minutes)</li>
+<li>Test consist of four sections: Reading, Writing, Maths (with calculator& with no calculator), and Essay (optional)</li>
+<li>Each section scored out of 800, are combined to create a composite score for a maximum possible score of 1600</li>
+<li>College Board does not deduct any points for an incorrect question</li>
+</ul>
+
+<a href="{% url 'contact' %}" class="btn btn-warning text-light text-center mt-3 mb-3">Contact Us</a>
+</div>
+<div class="col-md-1"></div>
+<div class="col-md-4 mt-5">
+  <div class="card text-center" style="background:url({%static 'images/contact.jpg' %}); height:200px;background-size:cover ; border-radius:20px">
+ <div class=" p-4" style="background:rgba(38,49,119,0.50);height:200px ;border-radius: 20px;">
+    <h5 class=" text-light fs-3 m-1 pb-3" style="border-bottom: 3px groove yellow;">Need Visa Application?</h5>
+    <a href="{% url 'contact'%}" class="btn btn-warning text-light m-3 p-2">CONTACT uS</a>
+  
+</div>
+</div>
+
+
+
+
+<div class="card mt-5 p-3" style="background-color: #273c75; border-radius:20px">
+  <h2 class="ms-3 me-3 mt-2 pb-2 text-center" style="border-bottom: 3px groove yellow;">Test Preparation</h2>
+ <ul class="">
+
+<li><i class="icofont-rounded-double-right"></i> <a class="text-light fs-4  a2" href="{% url 'ilets'%}">IELTS</a></li>
+<li><i class="icofont-rounded-double-right"></i> <a class="text-light fs-4  a2" href="{% url 'pte'%}">PTE</a></li>
+<li><i class="icofont-rounded-double-right"></i> <a class="text-light fs-4  a2" href="{% url 'sat'%}" >SAT</a></li>
+<li><i class="icofont-rounded-double-right"></i> <a class="text-light fs-4  a2" href="{% url 'spoken'%}">Spoken English</a></li>
+</ul>
+ </div> 
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+
+</script>{% endblock %}

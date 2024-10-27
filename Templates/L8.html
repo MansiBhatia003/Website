@@ -1,0 +1,91 @@
+{% extends 'sidebar.html'%}
+{% block content %}
+{% load static%}
+<div class="container">
+<div class="row">
+
+<div class="col-md-1"></div>
+
+
+<div class="col-md-10">
+<form method="POST" action="" style="background:rgba(38,49,115,0.70);border-radius:20px" class="p-3">
+   {% csrf_token %}
+
+   <h1 class="text-center pt-2 pb-2 fs-2"style="background:rgba(255,250,250,0.80);border-radius: 20px;color:#273c75; text-shadow:0px 0px 4px black">  
+   Demonstrating the countries which are having minimum Life Expectancy Index</h1>
+   <label class="text-light mt-3">Select Year</label>
+	<select required class="form-select"name="year" aria-label="Default select example">
+  <option selected value="">Select Year</option>
+  <option value="1990">1990</option>
+  <option value="1991">1991</option>
+  <option value="1992">1992</option>
+  <option value="1993">1993</option>
+  <option value="1994">1994</option>
+  <option value="1995">1995</option>
+  <option value="1996">1996</option>
+  <option value="1997">1997</option>
+  <option value="1998">1998</option>
+  <option value="1999">1999</option>
+  <option value="2000">2000</option>
+  <option value="2001">2001</option>
+  <option value="2002">2002</option>
+  <option value="2003">2003</option>
+  <option value="2004">2004</option>
+  <option value="2005">2005</option>
+  <option value="2006">2006</option>
+  <option value="2007">2007</option>
+  <option value="2008">2008</option>
+  <option value="2009">2009</option>
+  <option value="2010">2010</option>
+  <option value="2011">2011</option>
+  <option value="2012">2012</option>
+  <option value="2013">2013</option>
+  <option value="2014">2014</option>
+  <option value="2015">2015</option>
+  <option value="2016">2016</option>
+  <option value="2017">2017</option>
+  <option value="2018">2018</option>
+  <option value="2019">2019</option>
+  <option value="2020">2020</option>
+  <option value="2021">2021</option>
+
+  
+  
+</select>
+<label class="text-light mt-3">Select no of countries</label>
+<select class="form-select"name="cn" aria-label="Default select example">
+  <option selected>Select no of countries</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  
+  
+  
+</select>
+
+<center>
+<button class="btn btn-primary mt-3" type="submit">Analysis</button>
+</center>
+</form>
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+<div class="row mt-3">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+{% if graph %}
+{{ graph|safe }}
+{% endif %}
+</div>
+    <div class="col-md-2"></div>
+
+</div>
+{% endblock %}

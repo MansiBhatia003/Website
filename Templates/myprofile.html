@@ -1,0 +1,71 @@
+{% extends 'sidebar.html'%}
+{% block content %}
+{% load static%}
+
+<style type="text/css">
+	label{
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+</style>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+<div class="row ">
+    <div class="col-md-2"></div>
+    <div class="col-md-8  text-light p-3" style="background:rgba(38,49,115,0.70);box-shadow: 10px 10px 4px black; border-radius: 20px;">
+      <h3 class="text-center">My Profile</h3>
+      <div class="row">
+    <div class="col-md-6">
+        <form action="" method="POST" style="" class="p-3">
+   {% csrf_token %} 
+  <i class="icofont-ui-user"></i>
+  <label for="exampleFormControlInput1" class="form-label ">
+  Name : {{user.Firstname}}</label>
+  <label for="exampleFormControlInput1" class="form-label ">{{user.Lastname}}</label>
+  
+
+
+	<div class="mb-1">
+  <i class="icofont-email"></i>		
+  <label for="exampleFormControlTextarea1" class="form-label " >
+    Email :    {{user.Email}}</label>
+ </div> 
+<div class="mb-3">
+	<i class="icofont-phone"></i>
+  <label for="exampleFormControlTextarea1" class="form-label " >
+  Contact : {{user.Contact}}</label>
+ </div>
+ 
+	<div class="">
+	<i class="icofont-arrow-up"></i>
+<label for="exampleFormControlTextarea1" class="form-label " >
+  Age : {{user.Age}}</label>
+  </div>
+
+<div class=" ">
+	<i class="icofont-users-alt-4"></i>
+  <label for="exampleFormControlTextarea1" class="form-label " >
+  Gender : {{user.Gender}}</label>
+  </div>
+
+	<i class="icofont-location-arrow"></i>
+  <label for="exampleFormControlTextarea1" class="form-label " >
+  Address : {{user.Address}}</label>
+ 
+  <div class=" mt-5 ">
+ <a class="btn btn-primary text-light" type="submit" href="{% url 'editprofile' %}">Edit Profile</a>
+  </div>
+ 
+</form>
+</div>
+<div class="col-md-2 m-5">
+   <img src="{%static 'images/profile.jpg'%}">
+    </div>
+</div>
+</div>
+    <div class="col-md-2"></div>
+    </div>
+ 
+ </div>
+    
+{% endblock %}

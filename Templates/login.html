@@ -1,0 +1,57 @@
+{% extends 'base.html'%}
+{% block content%}
+{% load static%}
+
+
+  <style type="text/css">
+    button{}
+    .c1{
+    background-image: url({%static 'images/WALL.jpg' %});
+    background-size: cover}
+    .c2{background:rgba( 38,49,115,0.50);
+      height: 700px}
+   h1{color: white;}
+   
+}
+input{color: white;}
+  
+    a{
+      text-decoration: none;
+    }
+  </style>
+
+  
+    <DIV class="c1">
+  <div class="container-fluid c2 pt-5 ">
+    
+    
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <form class="p-5 m-2 shadow" style="background:rgba( 38,49,115,0.70); border-radius:20px; border:5px solid #e1b12c;" action="" method="POST">{% csrf_token %}
+          <h1 class="justify-content text-center text-warning">Login now</h1>
+          <div class="input-group mb-3 ">
+  
+  <span class="input-group-text mt-5" id="basic-addon1"><i class="icofont-user"></i></span>
+  <input required type="Email" class="form-control mt-5" placeholder="Type your email" name="email"aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+  
+  <span class="input-group-text" id="basic-addon1"><i class="icofont-key"></i></span>
+  <input required type="Password" class="form-control" placeholder=" Type your Password" name="password"aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+ <p class=" pt-5"><u><a class="text-warning" href="{% url 'forgot' %}">Forgot password</a></u></p>
+
+ <div class="d-grid gap-2 col-6 mx-auto mt-5">
+  <button class="btn btn-warning text-light" type="submit">Login</button>
+  
+</div>
+
+        </form>
+      </div>
+    </div>  
+      
+    </div>
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
+{% endblock   %}

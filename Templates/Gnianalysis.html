@@ -1,0 +1,38 @@
+{% extends 'sidebar.html'%}
+{% block content %}
+{% load static%}
+<style type="text/css">
+	a{
+		color: white;
+		text-decoration: none;
+	}
+	a:hover{
+		color:#74b9ff;
+	}
+</style>
+<div class="container">
+
+<!-- <h1 class="text-center pt-2 pb-2"style="background:rgba(255,250,250,0.80);border-radius: 20px;color:#273c75;"> Analysis of Gross National Income</h1> --> 
+<h1 class="text-center pt-2 pb-2"style="background:rgba(255,250,250,0.80);border-radius: 20px;color:#273c75; text-shadow:0px 0px 4px black"> Analysis of Gross National Income</h1>
+
+<div class="row m-2 text-white fs-5 p-3" style="background:rgba(38,49,115,0.70);border-radius: 20px;">
+	
+<a href="{% url 'g1'%}"><p class="mt-3"><i class="icofont-stylish-right pe-2"></i>Gross National Income of a Country for all years</p></a>
+<a href="{% url 'g2'%}"><p><i class="icofont-stylish-right pe-2"></i>Gross National Income of a Country for a range of years</p></a>
+<a href="{% url 'g3'%}"><p><i class="icofont-stylish-right pe-2"></i>Comparison of Gross National Income Between two countries</p></a>
+<a href="{% url 'g4'%}"><p><i class="icofont-stylish-right pe-2"></i>Comparison of Gross National Income Between two countries for a range of years</p></a>
+<a href="{% url 'g5'%}"><p><i class="icofont-stylish-right pe-2"></i>Comparison of Gross National Income Between three countries</p></a>
+<a href="{% url 'g6'%}"><p><i class="icofont-stylish-right pe-2"></i>Comparison of Gross National Income Between three countries for a range of years</p></a>
+<a href="{% url 'g7'%}"><p><i class="icofont-stylish-right pe-2"></i>Demonstrating Bar Graph that shows countries which are having maximum GNI</p></a>
+<a href="{% url 'g8'%}"><p><i class="icofont-stylish-right pe-2"></i>Demonstrating Bar Graph countries which are having minimum GNI</p></a>
+<a href="{% url 'g9'%}"><p><i class="icofont-stylish-right pe-2"></i>Demonstrating  Bubble Map for all countries over the years</p></a>
+<a href="{% url 'g10'%}"><p><i class="icofont-stylish-right pe-2"></i>Demonstrating Bubble chart for all countries for a range of years</p></a>
+
+
+
+
+</div>
+
+
+
+{% endblock %}

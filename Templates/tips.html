@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content%}
+
+
+ <div class="container-fluid text-center" style=" background:url({%static 'images/i3.jpg'%});
+   background-size:cover; height: 500px">
+    <div class="row" style="background:rgba(38,49,115,0.60); height: 500px;">
+      <h1  style="color: white; margin-top:12%;font-size:80px" data-aos="fade-right" data-aos-duration="3000">Admission Guidance</h1>
+</div>
+</div>
+<div class="container">
+ <div class="row mt-3 mb-3">
+  <div class="col-md-7 border">
+    <h1 style="color: #273c75;">Tips to pick a University</h1>
+<p>University selection can become a daunting task! Sound awareness of individual merit and resources is essential before you embark on your journey to discover the most suitable university that can help propel your dreams and ambitions. Every university has its own USPs; therefore a reality check on varying aspects like financials, curriculum, programme recognition, and exposure is mandatory.</p>
+
+<h4 class="text-dark mt-4 mb-2">University with preferred courses</h4>
+<p>Knowing what to study will help you navigate where to study! The primary step is to discover universities which offer a programme in your desired field of study. The vast catalogue of Global Opportunities helps you secure your desired course in leading universities abroad.</p>
+
+<h4 class="text-dark mt-4 mb-2">University with good placements</h4>
+<p>Placements and employment opportunities are the crowns of the university itself. Global Opportunities strongly suggest choosing a university with a good placement record. Students are advised to get in touch with the alumni and researching more on this particular aspect.</p>
+
+<h4 class="text-dark mt-4 mb-2">University with recognition</h4>
+<p>Recognition is one of the most important factors that come into play while selecting a university. It affects many aspects of studying abroad such as employment and values the university provides for the course. Proper research needs to be done to shortlist a good university with a good reputation and recognition.</p>
+
+<h4 class="text-dark mt-4 mb-2">Employment Opportunities</h4>
+<p>Students should keep in mind the placement opportunities that the university provides. Talking to the alumni and researching employment opportunities after graduation are recommended to the students as not only it gives you an estimate of the output of your investment but also makes them aware enough to make an informed decision.</p>
+
+<h4 class="text-dark mt-2 mb-2">Deciding between a preferred university or country</h4>
+<p>This is a crucial decision that needs to be taken before the selection process begins. The student needs to decide which of the two matters more to them. One could find a better university in a not-so-preferred country and vice versa which makes this one of the most important.</p>
+
+<p style="background:rgba(38,49,115,0.70); border-radius: 20px; text-align: center;" class="mt-5 mb-5 text-light">Though the selection of university might seem like a complicated process but the experts at Gateway with wide network of 200+ International institutions have helped over 1000+ students become successful global graduates. If you have any doubts, let our counselors present customized education opportunities based on your preference, merits, and demerits.<br>
+<a href="{% url 'contact'%}" class="btn btn-warning text-light m-2 p-2">CONTACT uS</a></p>
+
+
+</div>
+<div class="col-md-1"></div>
+<div class="col-md-4">
+   <div class="card text-center" style="background:url({%static 'images/contact.jpg' %}); height:200px;background-size:cover ; border-radius:20px">
+ <div class="m1 p-4" style="background:rgba(38,49,119,0.50);height:200px ;border-radius: 20px;">
+    <h5 class=" text-light fs-3 m-1 pb-3" style="border-bottom: 3px groove yellow;">Need Visa Application?</h5>
+    <a href="{% url 'contact'%}" class="btn btn-warning text-light m-3 p-2">CONTACT uS</a>
+  
+</div>
+</div>
+
+</div>
+</div>  
+</div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+{% endblock %}
